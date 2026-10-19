@@ -55,44 +55,103 @@
   </header>
 
   <main>
-    <!-- 001 / IDENTITY -->
-    <section class="hero accent-cyan" data-accent="cyan" aria-label="Fractis Studios introduction">
-      <canvas id="kaleido" aria-hidden="true"></canvas>
-      <div class="hero-veil" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="hero-label text-ui" data-hero><span class="dot"></span> 001 / Identity — Creative growth partner</p>
-        <h1 class="hero-title display-1" data-hero>
-          <span class="line"><span>Not a web design</span></span>
-          <span class="line"><span>agency. A creative</span></span>
-          <span class="line"><span class="grad-text">growth partner.</span></span>
-        </h1>
-        <p class="hero-sub" data-hero>Integrated strategy, design, motion, marketing, and digital execution. Built for businesses, creators, and teams who need senior creative leadership and real execution.</p>
-        <div class="hero-actions" data-hero>
-          <a class="btn btn-primary" href="start-a-project/">Start a Project
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a class="btn btn-ghost" href="#our-services">Explore Services</a>
-        </div>
-      </div>
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <div class="marquee-group">
-            <span class="marquee-item">Design</span>
-            <span class="marquee-item">Web Development</span>
-            <span class="marquee-item">Campaigns</span>
-            <span class="marquee-item">Photography</span>
-            <span class="marquee-item">Videography</span>
-            <span class="marquee-item">Social Media</span>
-            <span class="marquee-item">Visual Identity</span>
-            <span class="marquee-item">Digital</span>
-            <span class="marquee-item">Strategy</span>
-            <span class="marquee-item">SEO</span>
-            <span class="marquee-item">Copywriting</span>
-            <span class="marquee-item">Branding</span>
+    <!-- 001 / IDENTITY — pinned chapter, scrubbed by scroll -->
+    <section class="hero-chapter accent-cyan" data-accent="cyan" data-chapter="identity" aria-label="Fractis Studios introduction">
+      <div class="chapter-stage">
+        <canvas id="blueprint" aria-hidden="true"></canvas>
+        <div class="stage-veil" aria-hidden="true"></div>
+
+        <div class="hero-hud">
+          <div class="hud-card hud-tl" data-hud="title">
+            <p class="hero-label text-ui"><span class="dot"></span> 001 / Identity — Creative growth partner</p>
+            <h1 class="hero-title display-1">
+              <span class="line"><span>Not a web design</span></span>
+              <span class="line"><span>agency. A creative</span></span>
+              <span class="line"><span class="grad-text">growth partner.</span></span>
+            </h1>
+          </div>
+
+          <div class="hud-card hud-tr" data-hud="specs">
+            <p class="hud-heading text-ui">Full creative scope</p>
+            <ul class="spec-list">
+              <li><span class="spec-key">01</span> Strategy &amp; Direction</li>
+              <li><span class="spec-key">02</span> Brand Identity</li>
+              <li><span class="spec-key">03</span> Motion &amp; Content</li>
+              <li><span class="spec-key">04</span> Websites &amp; Platforms</li>
+              <li><span class="spec-key">05</span> Marketing</li>
+              <li><span class="spec-key">06</span> Sound &amp; Music</li>
+            </ul>
+          </div>
+
+          <div class="hud-card hud-bl" data-hud="cta">
+            <p class="hero-sub">Integrated strategy, design, motion, marketing, and digital execution. Built for businesses, creators, and teams who need senior creative leadership and real execution.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="start-a-project/">Start a Project
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="#our-services">Explore Services</a>
+            </div>
+          </div>
+
+          <div class="hud-card hud-br" data-hud="stats">
+            <div class="hud-stat"><span class="hud-stat-value">14</span><span class="hud-stat-label">Creatives</span></div>
+            <div class="hud-stat"><span class="hud-stat-value">6</span><span class="hud-stat-label">Disciplines</span></div>
+            <div class="hud-stat"><span class="hud-stat-value">1</span><span class="hud-stat-label">Studio</span></div>
+          </div>
+
+          <div class="hud-code" data-hud="code" aria-hidden="true">
+            <pre><code id="hud-code-text">studio: 'Fractis'
+mode:   'senior-led'
+scope:  'full-stack'</code></pre>
           </div>
         </div>
+
+        <div class="stage-progress" aria-hidden="true">
+          <span class="progress-chapter text-ui" id="progress-chapter">Identity</span>
+          <div class="progress-track"><div class="progress-cursor" id="progress-cursor"></div></div>
+          <span class="progress-pct text-ui" id="progress-pct">00%</span>
+        </div>
+      </div>
+      <div class="chapter-spacers">
+        <div class="section-spacer"></div>
+        <div class="section-spacer"></div>
+        <div class="section-spacer"></div>
+        <div class="section-spacer"></div>
       </div>
     </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">Design</span>
+          <span class="marquee-item">Web Development</span>
+          <span class="marquee-item">Campaigns</span>
+          <span class="marquee-item">Photography</span>
+          <span class="marquee-item">Videography</span>
+          <span class="marquee-item">Social Media</span>
+          <span class="marquee-item">Visual Identity</span>
+          <span class="marquee-item">Digital</span>
+          <span class="marquee-item">Strategy</span>
+          <span class="marquee-item">SEO</span>
+          <span class="marquee-item">Copywriting</span>
+          <span class="marquee-item">Branding</span>
+        </div>
+        <div class="marquee-group">
+          <span class="marquee-item">Design</span>
+          <span class="marquee-item">Web Development</span>
+          <span class="marquee-item">Campaigns</span>
+          <span class="marquee-item">Photography</span>
+          <span class="marquee-item">Videography</span>
+          <span class="marquee-item">Social Media</span>
+          <span class="marquee-item">Visual Identity</span>
+          <span class="marquee-item">Digital</span>
+          <span class="marquee-item">Strategy</span>
+          <span class="marquee-item">SEO</span>
+          <span class="marquee-item">Copywriting</span>
+          <span class="marquee-item">Branding</span>
+        </div>
+      </div>
+    </div>
 
     <!-- 002 / REASONING -->
     <section class="section accent-purple" id="why-fractis" data-accent="purple">
